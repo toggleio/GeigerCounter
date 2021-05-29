@@ -8,7 +8,7 @@ Russian military compact Geiger Muller Tube SI-3BG for detecting ionising radiat
 
 Datasheet(One version):
 
-![SI3BG_Geiger_tube_specs](.\Sources\SI3BG_Geiger_tube_specs.jpg)
+![SI3BG_Geiger_tube_specs](Sources\SI3BG_Geiger_tube_specs.jpg)
 
 - Рабочее напряжение: 380 - 110 в
 
