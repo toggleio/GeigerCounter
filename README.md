@@ -10,7 +10,7 @@ Datasheet(One version):
 
 ![SI3BG_Geiger_tube_specs](Sources/SI3BG_Geiger_tube_specs.jpg)
 
-- Рабочее напряжение: 380 - 110 в
+- Рабочее напряжение: 380 - 410 в
 
 - Working voltage: 380 - 410 V (Another version is 380 - 460 V)
 
