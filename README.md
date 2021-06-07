@@ -44,7 +44,12 @@ Datasheet(One version):
 
 ## Hardware
 
-Refer to `Hardware` folder. The board is drawn by Altium Designer 21. The circuit board is being tested.
+Refer to `Hardware` folder. The board is drawn by Altium Designer 21. 
+
+## Firmware
+
+Refer to `Firmware` folder. The firmware is based on Arduino platform and PlatformIO IDE. The demo runs on a stm32 board and a ssd1306/ssd1315 oled screen. You can modify the pins of the OLED screen and the external interrupt pins of the counter by modifying the pin definitions at the beginning of the program to migrate to other boards that support Arduino.
+
 
 
 To be continued... ╰(￣ω￣ｏ)
