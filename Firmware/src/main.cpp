@@ -31,7 +31,7 @@ void Count()
 
 void u8g2_prepare(void)
 {
-    u8g2.setFont(u8g2_font_6x13_tf);
+    u8g2.setFont(u8g2_font_9x15_tf);
     u8g2.setFontRefHeightExtendedText();
     u8g2.setDrawColor(1);
     u8g2.setFontPosTop();
@@ -49,11 +49,26 @@ void setup(void)
 void loop(void)
 {
     u8g2.clearBuffer();
-    sprintf(disp, "Count: %ld", count0);
-    u8g2.drawStr(0, 24, disp);
+    u8g2.drawStr(0, 1, "Geiger Counter");
+    sprintf(disp, "Count: %ld/2s", count0);
+    u8g2.drawStr(0, 17, disp);
     usv_scaled = count0 * 30 * 57;
     sprintf(disp, "%d.%04d uSv/hr", usv_scaled / 10000, usv_scaled % 10000);
-    u8g2.drawStr(0, 40, disp);
+    u8g2.drawStr(0, 33, disp);
+
+    if(usv_scaled < 4000)
+    {
+        u8g2.drawStr(0, 49, ">>>> Safe <<<<");
+    }
+    else if(usv_scaled < 1000000)
+    {
+        u8g2.drawStr(0, 49, ">>> Safe-R <<<");
+    }
+    else
+    {
+        u8g2.drawStr(0, 49, "!!! DANGER !!!");
+    }
+
     u8g2.sendBuffer();
     count0 = 0;
     delay(2000);
