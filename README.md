@@ -1,6 +1,6 @@
 # GergerCounter
 
-Geiger Miller counter module based on SI3BG(СИ3БГ).
+Geiger Müller counter module based on SI3BG(СИ3БГ).
 
 ## Introduction
 
